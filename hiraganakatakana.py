@@ -121,8 +121,9 @@ if ans:
         st.success(f'Answer: {answers[jj]}')
 if st.button('info'):
     st.text('katakana coming soon...')
-    st.markdown(['[-arik](https://profilepy-3t8ez4hcjvvmwsczqmxnbz.streamlit.app/)')
+    st.markdown('[-arik](https://profilepy-3t8ez4hcjvvmwsczqmxnbz.streamlit.app/)')
     
+
 
 
 
