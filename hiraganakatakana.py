@@ -31,7 +31,7 @@ if st.button('hiragana words'):
     st.text('10th row→  わ, を,ん')
 
     
-level = st.selectbox('whats your level?',['👇','1st row','2nd row','3rd row','4th row','5th row','6th row','7th row'
+level = st.radio('whats your level?',['👇','1st row','2nd row','3rd row','4th row','5th row','6th row','7th row'
 ,'8th row','9th row','10th row'])
 
 if 'level1_char' not in st.session_state:
@@ -90,4 +90,5 @@ if ans:
 
 
     
+
 
