@@ -83,12 +83,44 @@ with c3:
         st.header(jj)
         c1.button('refresh')
 
+
+answers = {
+    "あ": "a", "い": "i", "う": "u", "え": "e", "お": "o",
+    "か": "ka", "き": "ki", "く": "ku", "け": "ke", "こ": "ko",
+    "さ": "sa", "し": "shi", "す": "su", "せ": "se", "そ": "so",
+    "た": "ta", "ち": "chi", "つ": "tsu", "て": "te", "と": "to",
+    "な": "na", "に": "ni", "ぬ": "nu", "ね": "ne", "の": "no",
+    "は": "ha", "ひ": "hi", "ふ": "fu", "へ": "he", "ほ": "ho",
+    "ま": "ma", "み": "mi", "む": "mu", "め": "me", "も": "mo",
+    "や": "ya", "ゆ": "yu", "よ": "yo",
+    "ら": "ra", "り": "ri", "る": "ru", "れ": "re", "ろ": "ro",
+    "わ": "wa", "を": "wo/o", "ん": "un"
+}
+
 ans = st.button('answer')
 if ans:
-    if arik == 'あ':
-        st.success('ok')
-
+    if level == '1st row':
+        st.success(f'Answer: {answers[aa]}')
+    if level == '2nd row':
+        st.success(f'Answer: {answers[bb]}')
+    if level == '3rd row':
+        st.success(f'Answer: {answers[cc]}')
+    if level == '4th row':
+        st.success(f'Answer: {answers[dd]}')
+    if level == '5th row':
+        st.success(f'Answer: {answers[ee]}')
+    if level == '6th row':
+        st.success(f'Answer: {answers[ff]}')
+    if level == '7th row':
+        st.success(f'Answer: {answers[gg]}')
+    if level == '8th row':
+        st.success(f'Answer: {answers[hh]}')
+    if level == '9th row':
+        st.success(f'Answer: {answers[ii]}')
+    if level == '10th row':
+        st.success(f'Answer: {answers[jj]}')
 
     
+
 
 
