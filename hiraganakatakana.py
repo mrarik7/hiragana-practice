@@ -43,7 +43,7 @@ cc=random.choice(c)
 dd=random.choice(d)
 ee=random.choice(e)
 ff=random.choice(f)
-hh=random.choice(g)
+gg=random.choice(g)
 ii=random.choice(h)
 jj=random.choice(i)
 kk=random.choice(j)
@@ -123,6 +123,7 @@ if st.button('info'):
     st.text('katakana coming soon...')
     st.markdown('[-arik](https://profilepy-3t8ez4hcjvvmwsczqmxnbz.streamlit.app/)')
     
+
 
 
 
