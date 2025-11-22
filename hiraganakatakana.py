@@ -2,7 +2,7 @@
 import streamlit as st 
 import random
 
-st.header('Hiragana practice')
+st.header('Hiragana/ひらがな practice🏋️‍♂️')
 
 a =('あいうえお')
 b =('あいうえおかきくけこ')
@@ -18,7 +18,7 @@ j =('あいうえおかきくけこさしすせそたちつてとなにぬねの
 
 
 
-if st.button('hiragana words'):
+if st.button('hiragana words🈷️'):
     st.text('f1st row→  あ, い, う, え, お')
     st.text('2nd row→  か, き, く, け, こ')
     st.text('3rd row→  さ, し, す, せ, そ')
@@ -44,9 +44,9 @@ dd=random.choice(d)
 ee=random.choice(e)
 ff=random.choice(f)
 gg=random.choice(g)
-ii=random.choice(h)
-jj=random.choice(i)
-kk=random.choice(j)
+hh=random.choice(h)
+ii=random.choice(i)
+jj=random.choice(j)
 
 
 c1,c2,c3,c4,c5 = st.columns(5)
@@ -97,7 +97,7 @@ answers = {
     "わ": "wa", "を": "wo/o", "ん": "un"
 }
 
-ans = st.button('answer')
+ans = st.button('answer✏️')
 if ans:
     if level == '1st row':
         st.success(f'Answer: {answers[aa]}')
@@ -121,8 +121,9 @@ if ans:
         st.success(f'Answer: {answers[jj]}')
 if st.button('info'):
     st.text('katakana coming soon...')
-    st.markdown('[-arik](https://profilepy-3t8ez4hcjvvmwsczqmxnbz.streamlit.app/)')
+    st.markdown('👤[-arik](https://profilepy-3t8ez4hcjvvmwsczqmxnbz.streamlit.app/)')
     
+
 
 
 
