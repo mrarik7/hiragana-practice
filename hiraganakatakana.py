@@ -1,4 +1,3 @@
-
 import streamlit as st 
 import random
 
@@ -17,7 +16,6 @@ j =('あいうえおかきくけこさしすせそたちつてとなにぬねの
 
 
 
-
 if st.button('hiragana words levels🈷️'):
     st.text('f1st row→  あ, い, う, え, お')
     st.text('2nd row→  か, き, く, け, こ')
@@ -30,59 +28,64 @@ if st.button('hiragana words levels🈷️'):
     st.text('9th row→  ら, り, る, れ, ろ')
     st.text('10th row→  わ, を,ん')
 
-    
 level = st.radio('whats your level?',['👇','1st row','2nd row','3rd row','4th row','5th row','6th row','7th row'
 ,'8th row','9th row','10th row'])
 
-if 'level1_char' not in st.session_state:
-    st.session_state.level1_char = random.choice(a)
 
-aa=random.choice(a)
-bb=random.choice(b)
-cc=random.choice(c)
-dd=random.choice(d)
-ee=random.choice(e)
-ff=random.choice(f)
-gg=random.choice(g)
-hh=random.choice(h)
-ii=random.choice(i)
-jj=random.choice(j)
+if 'aa' not in st.session_state: st.session_state.aa = random.choice(a)
+if 'bb' not in st.session_state: st.session_state.bb = random.choice(b)
+if 'cc' not in st.session_state: st.session_state.cc = random.choice(c)
+if 'dd' not in st.session_state: st.session_state.dd = random.choice(d)
+if 'ee' not in st.session_state: st.session_state.ee = random.choice(e)
+if 'ff' not in st.session_state: st.session_state.ff = random.choice(f)
+if 'gg' not in st.session_state: st.session_state.gg = random.choice(g)
+if 'hh' not in st.session_state: st.session_state.hh = random.choice(h)
+if 'ii' not in st.session_state: st.session_state.ii = random.choice(i)
+if 'jj' not in st.session_state: st.session_state.jj = random.choice(j)
 
 
 c1,c2,c3,c4,c5 = st.columns(5)
 with c3:
     if level == '1st row':
-        u = st.header(aa)
-        c1.button('refresh')
+        st.header(st.session_state.aa)
+        if c1.button('refresh'):
+            st.session_state.aa = random.choice(a)
     if level == '2nd row':
-        u = st.header(bb)
-        c1.button('refresh')
+        st.header(st.session_state.bb)
+        if c1.button('refresh'):
+            st.session_state.bb = random.choice(b)
     if level == '3rd row':
-        st.header(cc)
-        c1.button('refresh')
+        st.header(st.session_state.cc)
+        if c1.button('refresh'):
+            st.session_state.cc = random.choice(c)
     if level == '4th row':
-        st.header(dd)
-        c1.button('refresh')
+        st.header(st.session_state.dd)
+        if c1.button('refresh'):
+            st.session_state.dd = random.choice(d)
     if level == '5th row':
-        st.header(ee)
-        c1.button('refresh')
+        st.header(st.session_state.ee)
+        if c1.button('refresh'):
+            st.session_state.ee = random.choice(e)
     if level == '6th row':
-        st.header(ff)
-        c1.button('refresh')
+        st.header(st.session_state.ff)
+        if c1.button('refresh'):
+            st.session_state.ff = random.choice(f)
     if level == '7th row':
-        st.header(gg)
-        c1.button('refresh')
+        st.header(st.session_state.gg)
+        if c1.button('refresh'):
+            st.session_state.gg = random.choice(g)
     if level == '8th row':
-        st.header(hh)
-        c1.button('refresh')
-
+        st.header(st.session_state.hh)
+        if c1.button('refresh'):
+            st.session_state.hh = random.choice(h)
     if level == '9th row':
-        st.header(ii)
-        c1.button('refresh')
+        st.header(st.session_state.ii)
+        if c1.button('refresh'):
+            st.session_state.ii = random.choice(i)
     if level == '10th row':
-        st.header(jj)
-        c1.button('refresh')
-
+        st.header(st.session_state.jj)
+        if c1.button('refresh'):
+            st.session_state.jj = random.choice(j)
 
 answers = {
     "あ": "a", "い": "i", "う": "u", "え": "e", "お": "o",
@@ -100,29 +103,31 @@ answers = {
 ans = st.button('answer✏️')
 if ans:
     if level == '1st row':
-        st.success(f'Answer: {answers[aa]}')
+        st.success(f'Answer: {answers[st.session_state.aa]}')
     if level == '2nd row':
-        st.success(f'Answer: {answers[bb]}')
+        st.success(f'Answer: {answers[st.session_state.bb]}')
     if level == '3rd row':
-        st.success(f'Answer: {answers[cc]}')
+        st.success(f'Answer: {answers[st.session_state.cc]}')
     if level == '4th row':
-        st.success(f'Answer: {answers[dd]}')
+        st.success(f'Answer: {answers[st.session_state.dd]}')
     if level == '5th row':
-        st.success(f'Answer: {answers[ee]}')
+        st.success(f'Answer: {answers[st.session_state.ee]}')
     if level == '6th row':
-        st.success(f'Answer: {answers[ff]}')
+        st.success(f'Answer: {answers[st.session_state.ff]}')
     if level == '7th row':
-        st.success(f'Answer: {answers[gg]}')
+        st.success(f'Answer: {answers[st.session_state.gg]}')
     if level == '8th row':
-        st.success(f'Answer: {answers[hh]}')
+        st.success(f'Answer: {answers[st.session_state.hh]}')
     if level == '9th row':
-        st.success(f'Answer: {answers[ii]}')
+        st.success(f'Answer: {answers[st.session_state.ii]}')
     if level == '10th row':
-        st.success(f'Answer: {answers[jj]}')
+        st.success(f'Answer: {answers[st.session_state.jj]}')
+
 if st.button('info'):
     st.text('katakana coming soon...')
     st.markdown('👤[-arik](https://profilepy-3t8ez4hcjvvmwsczqmxnbz.streamlit.app/)')
     
+
 
 
 
