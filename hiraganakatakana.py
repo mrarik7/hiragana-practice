@@ -18,7 +18,7 @@ j =('あいうえおかきくけこさしすせそたちつてとなにぬねの
 
 
 
-if st.button('hiragana words🈷️'):
+if st.button('hiragana words levels🈷️'):
     st.text('f1st row→  あ, い, う, え, お')
     st.text('2nd row→  か, き, く, け, こ')
     st.text('3rd row→  さ, し, す, せ, そ')
@@ -123,6 +123,7 @@ if st.button('info'):
     st.text('katakana coming soon...')
     st.markdown('👤[-arik](https://profilepy-3t8ez4hcjvvmwsczqmxnbz.streamlit.app/)')
     
+
 
 
 
