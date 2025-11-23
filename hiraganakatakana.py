@@ -38,7 +38,7 @@ level = st.radio('whats your level?',['👇','1st row','2nd row','3rd row','4th 
     
 c1,c2,c3,c4,c5 = st.columns(5)
 with c3:
-    if st.button("refresh"):
+    if st.button("refresh⭮"):
         if level == '1st row':
             st.session_state.char = random.choice(a)
         elif level == '2nd row':
@@ -73,7 +73,7 @@ answers = {
     "わ": "wa", "を": "wo/o", "ん": "un"
 }
 with c3:
-    if st.button("Answer"):
+    if st.button("Answer🔍"):
         st.subheader(answers.get(st.session_state.char, "Not found"))
 
 
@@ -82,6 +82,7 @@ if st.button('info'):
     st.text('katakana coming soon...')
     st.markdown('👤[-arik](https://profilepy-3t8ez4hcjvvmwsczqmxnbz.streamlit.app/)')
     
+
 
 
 
