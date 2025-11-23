@@ -78,10 +78,11 @@ with c3:
 
 
 
-if st.button('info'):
+if st.button('infoℹ️'):
     st.text('katakana coming soon...')
     st.markdown('👤[-arik](https://profilepy-3t8ez4hcjvvmwsczqmxnbz.streamlit.app/)')
     
+
 
 
 
